@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F019982D-30E4-45EA-9D2A-EDE8B49C9AD4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DalRis</RootNamespace>
+    <AssemblyName>DalRis</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SubSonic">
+      <HintPath>..\Library\SubSonic.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="generated\AllStructs.cs" />
+    <Compile Include="generated\RisAreaTematica.cs" />
+    <Compile Include="generated\RisAreaTematicaController.cs" />
+    <Compile Include="generated\RisAseguradora.cs" />
+    <Compile Include="generated\RisAseguradoraController.cs" />
+    <Compile Include="generated\RisCaracteristica.cs" />
+    <Compile Include="generated\RisCaracteristicaController.cs" />
+    <Compile Include="generated\RisCentrosDeInvestigacion.cs" />
+    <Compile Include="generated\RisCentrosDeInvestigacionController.cs" />
+    <Compile Include="generated\RisComiteEtica.cs" />
+    <Compile Include="generated\RisComiteEticaController.cs" />
+    <Compile Include="generated\RisConcentimiento.cs" />
+    <Compile Include="generated\RisConcentimientoController.cs" />
+    <Compile Include="generated\RisEnmienda.cs" />
+    <Compile Include="generated\RisEnmiendaController.cs" />
+    <Compile Include="generated\RisEnmiendaItemDesaprobado.cs" />
+    <Compile Include="generated\RisEnmiendaItemDesaprobadoController.cs" />
+    <Compile Include="generated\RisEntidad.cs" />
+    <Compile Include="generated\RisEntidadController.cs" />
+    <Compile Include="generated\RisEstudio.cs" />
+    <Compile Include="generated\RisEstudioAseguradora.cs" />
+    <Compile Include="generated\RisEstudioAseguradoraController.cs" />
+    <Compile Include="generated\RisEstudioCaracteristica.cs" />
+    <Compile Include="generated\RisEstudioCaracteristicaController.cs" />
+    <Compile Include="generated\RisEstudioComiteEtica.cs" />
+    <Compile Include="generated\RisEstudioComiteEticaController.cs" />
+    <Compile Include="generated\RisEstudioController.cs" />
+    <Compile Include="generated\RisEstudioEntidad.cs" />
+    <Compile Include="generated\RisEstudioEntidadController.cs" />
+    <Compile Include="generated\RisEstudioFuenteRecoleccionDato.cs" />
+    <Compile Include="generated\RisEstudioFuenteRecoleccionDatoController.cs" />
+    <Compile Include="generated\RisEstudioInvestigador.cs" />
+    <Compile Include="generated\RisEstudioInvestigadorController.cs" />
+    <Compile Include="generated\RisEstudioItemAprobado.cs" />
+    <Compile Include="generated\RisEstudioItemAprobadoController.cs" />
+    <Compile Include="generated\RisEstudioItemDesaprobado.cs" />
+    <Compile Include="generated\RisEstudioItemDesaprobadoController.cs" />
+    <Compile Include="generated\RisEstudioPoblacionVulnerable.cs" />
+    <Compile Include="generated\RisEstudioPoblacionVulnerableController.cs" />
+    <Compile Include="generated\RisEstudioSysEfectorMulticentrico.cs" />
+    <Compile Include="generated\RisEstudioSysEfectorMulticentricoController.cs" />
+    <Compile Include="generated\RisEstudioSysPaisMulticentrico.cs" />
+    <Compile Include="generated\RisEstudioSysPaisMulticentricoController.cs" />
+    <Compile Include="generated\RisEstudioSysProvinciaMulticentrico.cs" />
+    <Compile Include="generated\RisEstudioSysProvinciaMulticentricoController.cs" />
+    <Compile Include="generated\RisEvaluacionRechazada.cs" />
+    <Compile Include="generated\RisEvaluacionRechazadaController.cs" />
+    <Compile Include="generated\RisFuenteRecoleccionDato.cs" />
+    <Compile Include="generated\RisFuenteRecoleccionDatoController.cs" />
+    <Compile Include="generated\RisFuncionEnElEquipo.cs" />
+    <Compile Include="generated\RisFuncionEnElEquipoController.cs" />
+    <Compile Include="generated\RisInvestigadore.cs" />
+    <Compile Include="generated\RisInvestigadoreController.cs" />
+    <Compile Include="generated\RisItemAprobado.cs" />
+    <Compile Include="generated\RisItemAprobadoController.cs" />
+    <Compile Include="generated\RisItemDesaprobado.cs" />
+    <Compile Include="generated\RisItemDesaprobadoController.cs" />
+    <Compile Include="generated\RisLugarRealizacion.cs" />
+    <Compile Include="generated\RisLugarRealizacionController.cs" />
+    <Compile Include="generated\RisNotum.cs" />
+    <Compile Include="generated\RisNotumController.cs" />
+    <Compile Include="generated\RisPoblacionVulnerable.cs" />
+    <Compile Include="generated\RisPoblacionVulnerableController.cs" />
+    <Compile Include="generated\RisPresentacionInforme.cs" />
+    <Compile Include="generated\RisPresentacionInformeController.cs" />
+    <Compile Include="generated\RisProfesion.cs" />
+    <Compile Include="generated\RisProfesionController.cs" />
+    <Compile Include="generated\RisTipoDocumento.cs" />
+    <Compile Include="generated\RisTipoDocumentoController.cs" />
+    <Compile Include="generated\RisTipoTelefono.cs" />
+    <Compile Include="generated\RisTipoTelefonoController.cs" />
+    <Compile Include="generated\RisVigenciaPoliza.cs" />
+    <Compile Include="generated\RisVigenciaPolizaController.cs" />
+    <Compile Include="generated\StoredProcedures.cs" />
+    <Compile Include="generated\SysAntecedente.cs" />
+    <Compile Include="generated\SysAntecedenteController.cs" />
+    <Compile Include="generated\SysAntecedenteEnfermedad.cs" />
+    <Compile Include="generated\SysAntecedenteEnfermedadController.cs" />
+    <Compile Include="generated\SysBarrio.cs" />
+    <Compile Include="generated\SysBarrioController.cs" />
+    <Compile Include="generated\SysCepSap.cs" />
+    <Compile Include="generated\SysCepSapController.cs" />
+    <Compile Include="generated\SysCIE10.cs" />
+    <Compile Include="generated\SysCIE10Capitulo.cs" />
+    <Compile Include="generated\SysCIE10CapituloController.cs" />
+    <Compile Include="generated\SysCIE10Controller.cs" />
+    <Compile Include="generated\SysDefuncion.cs" />
+    <Compile Include="generated\SysDefuncionController.cs" />
+    <Compile Include="generated\SysDepartamento.cs" />
+    <Compile Include="generated\SysDepartamentoController.cs" />
+    <Compile Include="generated\SysDireccione.cs" />
+    <Compile Include="generated\SysDireccioneController.cs" />
+    <Compile Include="generated\SysEfector.cs" />
+    <Compile Include="generated\SysEfectorController.cs" />
+    <Compile Include="generated\SysEspecialidad.cs" />
+    <Compile Include="generated\SysEspecialidad2.cs" />
+    <Compile Include="generated\SysEspecialidad2Controller.cs" />
+    <Compile Include="generated\SysEspecialidadController.cs" />
+    <Compile Include="generated\SysEstablecimiento.cs" />
+    <Compile Include="generated\SysEstablecimientoController.cs" />
+    <Compile Include="generated\SysEstado.cs" />
+    <Compile Include="generated\SysEstadoCivil.cs" />
+    <Compile Include="generated\SysEstadoCivilController.cs" />
+    <Compile Include="generated\SysEstadoController.cs" />
+    <Compile Include="generated\SysHistoriaClinica.cs" />
+    <Compile Include="generated\SysHistoriaClinicaController.cs" />
+    <Compile Include="generated\SysIdioma.cs" />
+    <Compile Include="generated\SysIdiomaController.cs" />
+    <Compile Include="generated\SysLocalidad.cs" />
+    <Compile Include="generated\SysLocalidadController.cs" />
+    <Compile Include="generated\SysMedicamento.cs" />
+    <Compile Include="generated\SysMedicamentoController.cs" />
+    <Compile Include="generated\SysMedicamentoRubro.cs" />
+    <Compile Include="generated\SysMedicamentoRubroController.cs" />
+    <Compile Include="generated\SysMenu.cs" />
+    <Compile Include="generated\SysMenuController.cs" />
+    <Compile Include="generated\SysModulo.cs" />
+    <Compile Include="generated\SysModuloController.cs" />
+    <Compile Include="generated\SysMotivoNI.cs" />
+    <Compile Include="generated\SysMotivoNIController.cs" />
+    <Compile Include="generated\SysMovimientoHistoriaClinica.cs" />
+    <Compile Include="generated\SysMovimientoHistoriaClinicaController.cs" />
+    <Compile Include="generated\SysMunicipio.cs" />
+    <Compile Include="generated\SysMunicipioController.cs" />
+    <Compile Include="generated\SysNivelInstruccion.cs" />
+    <Compile Include="generated\SysNivelInstruccionController.cs" />
+    <Compile Include="generated\SysObraSocial.cs" />
+    <Compile Include="generated\SysObraSocialController.cs" />
+    <Compile Include="generated\SysOcupacion.cs" />
+    <Compile Include="generated\SysOcupacionController.cs" />
+    <Compile Include="generated\SysOrganismo.cs" />
+    <Compile Include="generated\SysOrganismoController.cs" />
+    <Compile Include="generated\SysPaciente.cs" />
+    <Compile Include="generated\SysPacienteAntecedentesFamiliare.cs" />
+    <Compile Include="generated\SysPacienteAntecedentesFamiliareController.cs" />
+    <Compile Include="generated\SysPacienteCeliaco.cs" />
+    <Compile Include="generated\SysPacienteCeliacoController.cs" />
+    <Compile Include="generated\SysPacienteController.cs" />
+    <Compile Include="generated\SysPai.cs" />
+    <Compile Include="generated\SysPaiController.cs" />
+    <Compile Include="generated\SysParentesco.cs" />
+    <Compile Include="generated\SysParentescoController.cs" />
+    <Compile Include="generated\SysParentescoTipo.cs" />
+    <Compile Include="generated\SysParentescoTipoController.cs" />
+    <Compile Include="generated\SysPerfil.cs" />
+    <Compile Include="generated\SysPerfilController.cs" />
+    <Compile Include="generated\SysPerfilEfector.cs" />
+    <Compile Include="generated\SysPermiso.cs" />
+    <Compile Include="generated\SysPermisoController.cs" />
+    <Compile Include="generated\SysPoblacion.cs" />
+    <Compile Include="generated\SysPoblacion1.cs" />
+    <Compile Include="generated\SysPoblacion1Controller.cs" />
+    <Compile Include="generated\SysPoblacionController.cs" />
+    <Compile Include="generated\SysProfesion.cs" />
+    <Compile Include="generated\SysProfesional.cs" />
+    <Compile Include="generated\SysProfesionalController.cs" />
+    <Compile Include="generated\SysProfesionController.cs" />
+    <Compile Include="generated\SysProvincium.cs" />
+    <Compile Include="generated\SysProvinciumController.cs" />
+    <Compile Include="generated\SysRelAntecedentePaciente.cs" />
+    <Compile Include="generated\SysRelAntecedentePacienteController.cs" />
+    <Compile Include="generated\SysRelEspecialidadEfector.cs" />
+    <Compile Include="generated\SysRelEspecialidadEfectorController.cs" />
+    <Compile Include="generated\SysRelEstadoMotivoNI.cs" />
+    <Compile Include="generated\SysRelEstadoMotivoNIController.cs" />
+    <Compile Include="generated\SysRelFormularioCobertura.cs" />
+    <Compile Include="generated\SysRelFormularioCoberturaController.cs" />
+    <Compile Include="generated\SysRelHistoriaClinicaEfector.cs" />
+    <Compile Include="generated\SysRelHistoriaClinicaEfectorController.cs" />
+    <Compile Include="generated\SysRelPacienteObraSocial.cs" />
+    <Compile Include="generated\SysRelPacienteObraSocialController.cs" />
+    <Compile Include="generated\SysRelProfesionalEfector.cs" />
+    <Compile Include="generated\SysRelProfesionalEfectorController.cs" />
+    <Compile Include="generated\SysRelServicioEfector.cs" />
+    <Compile Include="generated\SysRelServicioEfectorController.cs" />
+    <Compile Include="generated\SysServicio.cs" />
+    <Compile Include="generated\SysServicioController.cs" />
+    <Compile Include="generated\SysSexo.cs" />
+    <Compile Include="generated\SysSexoController.cs" />
+    <Compile Include="generated\SysSituacionLaboral.cs" />
+    <Compile Include="generated\SysSituacionLaboralController.cs" />
+    <Compile Include="generated\SysTipoAntecedente.cs" />
+    <Compile Include="generated\SysTipoAntecedenteController.cs" />
+    <Compile Include="generated\SysTipoCobertura.cs" />
+    <Compile Include="generated\SysTipoCoberturaController.cs" />
+    <Compile Include="generated\SysTipoDocumento.cs" />
+    <Compile Include="generated\SysTipoDocumentoController.cs" />
+    <Compile Include="generated\SysTipoEfector.cs" />
+    <Compile Include="generated\SysTipoEfectorController.cs" />
+    <Compile Include="generated\SysTipoObraSocial.cs" />
+    <Compile Include="generated\SysTipoObraSocialController.cs" />
+    <Compile Include="generated\SysTipoProfesional.cs" />
+    <Compile Include="generated\SysTipoProfesionalController.cs" />
+    <Compile Include="generated\SysUsuario.cs" />
+    <Compile Include="generated\SysUsuarioController.cs" />
+    <Compile Include="generated\SysZona.cs" />
+    <Compile Include="generated\SysZonaController.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

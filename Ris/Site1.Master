@@ -1,0 +1,44 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Ris.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <meta charset="utf-8">
+    <title>Subsecretaría de Salud - Sistema Integral Provincial de Salud</title>
+    <meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = device-width">
+
+    <link rel="stylesheet" type="text/css" href="~/css/style.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="~/css/style.responsive.css" media="all" />
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/script.responsive.js"></script>
+    <script type="text/javascript">
+        document.createElement("nav");
+        document.createElement("header");
+        document.createElement("footer");
+    </script>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <%--<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>--%>
+            <asp:ContentPlaceHolder ID="head" runat="server">
+            </asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="Superior" runat="server">
+            </asp:ContentPlaceHolder>
+            <div id="main">
+                <div id="leftside">
+                    <asp:ContentPlaceHolder ID="Cuerpo" runat="server">
+                    </asp:ContentPlaceHolder>
+                    <asp:ContentPlaceHolder ID="Botones" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

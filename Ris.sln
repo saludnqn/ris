@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ris", "Ris\Ris.csproj", "{BEFE7AD7-1E07-43E7-8817-00F3EFB9E945}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DalRis", "DalRis\DalRis.csproj", "{F019982D-30E4-45EA-9D2A-EDE8B49C9AD4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BEFE7AD7-1E07-43E7-8817-00F3EFB9E945}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEFE7AD7-1E07-43E7-8817-00F3EFB9E945}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEFE7AD7-1E07-43E7-8817-00F3EFB9E945}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEFE7AD7-1E07-43E7-8817-00F3EFB9E945}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F019982D-30E4-45EA-9D2A-EDE8B49C9AD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F019982D-30E4-45EA-9D2A-EDE8B49C9AD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F019982D-30E4-45EA-9D2A-EDE8B49C9AD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F019982D-30E4-45EA-9D2A-EDE8B49C9AD4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
