@@ -2355,7 +2355,7 @@ li p, .art-postcontent li p, .art-blockcontent li p {
     top: 5px;
     width: 8%;
     height: 100%;
-    background-image: url('images/logo.png');
+    background-image: url('../img/logo.png');
     /*background-position: 20px 5px;*/
     background-repeat: no-repeat;
     z-index: 0;
@@ -2704,7 +2704,7 @@ ul.art-hmenu > li:before {
     left: -9px;
     width: 9px;
     height: 24px;
-    background: url('images/menuseparator.png') center center no-repeat;
+    background: url('../img/menuseparator.png') center center no-repeat;
 }
 
 ul.art-hmenu > li:first-child:before {
@@ -2813,7 +2813,7 @@ ul.art-hmenu ul {
     z-index: 10;
     left: 0;
     top: 0;
-    background-image: url('images/spacer.gif');
+    background-image: url('../img/spacer.gif');
 }
 
 .desktop-nav ul.art-hmenu > li > ul {
