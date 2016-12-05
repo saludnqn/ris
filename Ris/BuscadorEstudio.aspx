@@ -84,7 +84,7 @@
                                                             <td class="auto-style1">
                                                                 <asp:Label ID="Label3" runat="server" Font-Bold="True"
                                                                     Text="Crear un nuevo registro"></asp:Label>
-                                                            </td>                                                            
+                                                            </td>
                                                         </tr>
                                                         <tr>
                                                             <td class="auto-style1">
@@ -92,7 +92,7 @@
                                                                     BorderStyle="None" CssClass="botonFormulario" Font-Bold="True" Font-Size="Medium"
                                                                     ForeColor="White" Text="Nuevo !" BackColor="#333333"
                                                                     OnClick="btnNuevoRegistro_Click" TabIndex="1" />
-                                                            </td>                                                            
+                                                            </td>
                                                         </tr>
                                                     </table>
                                                 </td>
@@ -113,7 +113,7 @@
                                 <tr>
                                     <td>
                                         <asp:Label ID="Label78" runat="server" Font-Bold="True"
-                                            Text="Buscar un registro existente"></asp:Label>
+                                            Text="Buscar un registro existente por Investigador, Título de la Investigación, Nombre de Institución o Tipo de estudio"></asp:Label>
                                     </td>
                                 </tr>
                                 <tr>
