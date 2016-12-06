@@ -71,12 +71,18 @@
         </tr>
         <tr>
             <td>
-                <asp:Label ID="lblNombreEntidad" runat="server" Text="Centro de Investigación"></asp:Label>
+                <asp:CheckBox ID="chkEntidad" OnCheckedChanged="chkEntidad_CheckedChanged" runat="server" AutoPostBack="true" Text="  Cargar Centro de Investigación SIS" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <asp:Label ID="lblNombreEntidadCombo" runat="server" Text="Centro de Investigación SISA" Visible="false"></asp:Label>
+                <asp:Label ID="lblNombreEntidadTextbox" runat="server" Text="Nombre Entidad"></asp:Label>
             </td>
             <td>
-                <%--<asp:TextBox ID="txtEntidad" runat="server"></asp:TextBox>--%>
+                <asp:TextBox ID="txtEntidad" runat="server"></asp:TextBox>
                 <asp:DropDownList ID="ddlCentroDeInvestigacion" DataValueField="idCentroDeInvestigacion"
-                    DataTextField="nombre" runat="server">
+                    DataTextField="nombre" runat="server" Visible="false">
                 </asp:DropDownList>
             </td>
 

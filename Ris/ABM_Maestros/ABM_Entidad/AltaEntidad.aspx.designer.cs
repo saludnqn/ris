@@ -31,13 +31,40 @@ namespace SIPS.RIS.ABM_Maestros.ABM_Entidad {
         protected global::System.Web.UI.WebControls.HiddenField hdfIdEntidad;
         
         /// <summary>
-        /// lblNombreEntidad control.
+        /// chkEntidad control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblNombreEntidad;
+        protected global::System.Web.UI.WebControls.CheckBox chkEntidad;
+        
+        /// <summary>
+        /// lblNombreEntidadCombo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblNombreEntidadCombo;
+        
+        /// <summary>
+        /// lblNombreEntidadTextbox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblNombreEntidadTextbox;
+        
+        /// <summary>
+        /// txtEntidad control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtEntidad;
         
         /// <summary>
         /// ddlCentroDeInvestigacion control.

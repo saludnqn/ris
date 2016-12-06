@@ -113,7 +113,8 @@
                                 <tr>
                                     <td>
                                         <asp:Label ID="Label78" runat="server" Font-Bold="True"
-                                            Text="Buscar un registro existente por Investigador, Título de la Investigación, Nombre de Institución o Tipo de estudio"></asp:Label>
+                                            Text="Buscar un registro existente por Investigador, Título de la Investigación, Tipo de Estudio,
+                                            Nombre de Institución, Año, Palabras Clave, Drogas, Nro Reg. Nacional o Nro Expediente"></asp:Label>
                                     </td>
                                 </tr>
                                 <tr>

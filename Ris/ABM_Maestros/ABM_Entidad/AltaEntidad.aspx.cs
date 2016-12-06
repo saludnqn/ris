@@ -49,16 +49,10 @@ namespace SIPS.RIS.ABM_Maestros.ABM_Entidad
 
         private void cargarListas()
         {
-            //SubSonic.Select b = new SubSonic.Select();
-            //b.From(RisEntidad.Schema);
-
-            //var listaEstudios = b.ExecuteTypedList<RisEntidad>();
-
             ddlCentroDeInvestigacion.DataSource = RisCentrosDeInvestigacion.FetchAll();
             ddlCentroDeInvestigacion.DataBind();
             ddlCentroDeInvestigacion.Items.Insert(0, new ListItem("--Seleccionar--", "0"));
         }
-
 
         private void cargaEntidades()
         {
@@ -101,7 +95,7 @@ namespace SIPS.RIS.ABM_Maestros.ABM_Entidad
             else
                 entidad = new RisEntidad();
 
-            entidad.Nombre = ddlCentroDeInvestigacion.SelectedItem.ToString();
+            entidad.Nombre = (txtEntidad.Text == "") ? ddlCentroDeInvestigacion.SelectedItem.ToString() : txtEntidad.Text;
             entidad.Domicilio = txtDomicilio.Text;
             entidad.Caracter = ddlCaracterEntidad.SelectedItem.ToString();
             entidad.Tipo = ddlTipo.SelectedItem.ToString();
@@ -118,6 +112,26 @@ namespace SIPS.RIS.ABM_Maestros.ABM_Entidad
             int idEntidad = Int32.Parse(e.CommandArgument.ToString());
 
             editarEntidades(idEntidad);
+        }
+
+        protected void chkEntidad_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkEntidad.Checked)
+            {
+                lblNombreEntidadCombo.Visible = true;
+                ddlCentroDeInvestigacion.Visible = true;
+
+                lblNombreEntidadTextbox.Visible = false;
+                txtEntidad.Visible = false;
+            }
+            else
+            {
+                lblNombreEntidadCombo.Visible = false;
+                ddlCentroDeInvestigacion.Visible = false;
+
+                lblNombreEntidadTextbox.Visible = true;
+                txtEntidad.Visible = true;
+            }
         }
     }
 }
