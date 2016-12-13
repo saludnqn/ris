@@ -33,7 +33,7 @@ namespace Ris
                 if (string.IsNullOrEmpty(url))
                     url = SSOHelper.Configuration["StartPage"] as string;
 
-                ImgExit.PostBackUrl = "/SSO/Logout.aspx?relogin=1&url=" + url + "/sips";                
+                ImgExit.PostBackUrl = "/SSO/Logout.aspx?relogin=1&url=" + url + "/sips";
 
                 ////Armo el menú de la Aplicación seleccionada para el efector seleccionado
                 List<SSOMenuItem> menu = SSOHelper.GetApplicationMenuByEfector();

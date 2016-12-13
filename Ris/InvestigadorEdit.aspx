@@ -3,29 +3,22 @@
 
 <asp:Content ID="ContentHead" ContentPlaceHolderID="Superior" runat="server">
 
-    <script type="text/javascript" src='<%= ResolveUrl("~/ControlMenor/js/jquery-1.5.1.min.js") %>'></script>
 
-    <script type="text/javascript" src='<%= ResolveUrl("~/ControlMenor/js/jquery-ui-1.8.9.custom.min.js") %>'></script>
-
-    <script type="text/javascript" src='<%= ResolveUrl("~/ControlMenor/js/json2.js") %>'></script>
-
-    <link href='<%= ResolveUrl("~/ControlMenor/css/redmond/jquery.ui.all.css") %>' rel="stylesheet"
-        type="text/css" />
-
-    <link rel="stylesheet" type="text/css" href="../App_Themes/consultorio/ical.css" />
-
-    <script type="text/javascript" src="../js/jquery.ui.datepicker-es.js"></script>
-
-    <script type="text/javascript" src="../js/Mascara.js"></script>
-
-    <script type="text/javascript" src="../js/ValidaFecha.js"></script>
+    <script type="text/javascript" src='<%= ResolveUrl("js/jquery-1.5.1.min.js") %>'></script>
+    <script type="text/javascript" src='<%= ResolveUrl("js/jquery-ui-1.8.9.custom.min.js") %>'></script>
+    <script type="text/javascript" src='<%= ResolveUrl("js/json2.js") %>'></script>
+    <link href='<%= ResolveUrl("css/jquery.ui.all.css") %>' rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/ical.css" />
+    <script type="text/javascript" src="js/jquery.ui.datepicker-es.js"></script>
+    <script type="text/javascript" src="js/Mascara.js"></script>
+    <script type="text/javascript" src="js/ValidaFecha.js"></script>
 
     <script type="text/javascript">
 
         $(function () {
             $("#<%=inputFechaNacimiento.ClientID %>").datepicker({
                 showOn: 'button',
-                buttonImage: '../img/calend1.jpg',
+                buttonImage: 'img/calend1.jpg',
                 buttonImageOnly: true
             });
         });
@@ -172,10 +165,12 @@
                                         <asp:Label ID="Label25" runat="server" Text="Fecha de nacimiento"></asp:Label>
                                     </td>
                                     <td>
+                                          
                                         <input class="estiloInputFecha" id="inputFechaNacimiento" runat="server" maxlength="10"
                                             onblur="valFecha(this)"
                                             onkeyup="mascara(this,'/',patron,true)" tabindex="5" type="text"
-                                            __designer:mapid="45" /><asp:Label ID="Label88" runat="server" Text="(dd/mm/aaaa)"></asp:Label>
+                                            __designer:mapid="45" />
+                                        <asp:Label ID="Label88" runat="server" Text="(dd/mm/aaaa)"></asp:Label>
                                     </td>
                                 </tr>
                                 <tr>
