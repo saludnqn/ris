@@ -58,6 +58,15 @@ namespace SIPS.RIS {
         protected global::System.Web.UI.HtmlControls.HtmlInputText inputFecha;
         
         /// <summary>
+        /// Label88 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label88;
+        
+        /// <summary>
         /// Label89 control.
         /// </summary>
         /// <remarks>

@@ -20,11 +20,20 @@
     <script type="text/javascript" src="js/ValidaFecha.js"></script>
 
     <script type="text/javascript">
+        
+
+        $(function () {
+            $("#<%=inputFechaPresentacionInformeFinal.ClientID %>").datepicker({
+                showOn: 'button',
+                buttonImage: 'img/calend1.jpg',
+                buttonImageOnly: true
+            });
+        });
 
         $(function () {
             $("#<%=inputFechaPrimerParticipante.ClientID %>").datepicker({
                 showOn: 'button',
-                buttonImage: '~/../img/calend1.jpg',
+                buttonImage: 'img/calend1.jpg',
                 buttonImageOnly: true
             });
         });
@@ -32,7 +41,7 @@
         $(function () {
             $("#<%=inputFechaCierreParticipantes.ClientID %>").datepicker({
                  showOn: 'button',
-                 buttonImage: '~/../img/calend1.jpg',
+                 buttonImage: 'img/calend1.jpg',
                  buttonImageOnly: true
              });
          });
@@ -40,7 +49,7 @@
          $(function () {
              $("#<%=inputFechaInicio.ClientID %>").datepicker({
                 showOn: 'button',
-                buttonImage: '~/../img/calend1.jpg',
+                buttonImage: 'img/calend1.jpg',
                 buttonImageOnly: true
             });
         });
@@ -48,7 +57,7 @@
         $(function () {
             $("#<%=inputFechaFinalizacion.ClientID %>").datepicker({
                 showOn: 'button',
-                buttonImage: '~/../img/calend1.jpg',
+                buttonImage: 'img/calend1.jpg',
                 buttonImageOnly: true
             });
         });
@@ -56,7 +65,7 @@
         $(function () {
             $("#<%=inputFechaAprobadoCAIBSH.ClientID %>").datepicker({
                 showOn: 'button',
-                buttonImage: '~/../img/calend1.jpg',
+                buttonImage: 'img/calend1.jpg',
                 buttonImageOnly: true
             });
         });
@@ -64,7 +73,7 @@
         $(function () {
             $("#<%=inputFechaRechazadoCAIBSH.ClientID %>").datepicker({
                 showOn: 'button',
-                buttonImage: '~/../img/calend1.jpg',
+                buttonImage: 'img/calend1.jpg',
                 buttonImageOnly: true
             });
         });
@@ -72,7 +81,7 @@
         $(function () {
             $("#<%=inputFechaVencimientoPlazoCAIBSH.ClientID %>").datepicker({
                 showOn: 'button',
-                buttonImage: '~/../img/calend1.jpg',
+                buttonImage: 'img/calend1.jpg',
                 buttonImageOnly: true
             });
         });
@@ -81,7 +90,7 @@
         $(function () {
             $("#<%=inputFechaRetiroEvaluacionCAIBSH.ClientID %>").datepicker({
                 showOn: 'button',
-                buttonImage: '~/../img/calend1.jpg',
+                buttonImage: 'img/calend1.jpg',
                 buttonImageOnly: true
             });
         });
@@ -1353,6 +1362,9 @@
                                         onblur="valFecha(this)"
                                         onkeyup="mascara(this,'/',patron,true)" tabindex="29" type="text" /><asp:Label ID="Label97" runat="server" Text="(dd/mm/aaaa)"></asp:Label>
                                 </td>
+
+
+                                 
                             </tr>
                         </table>
                     </ContentTemplate>

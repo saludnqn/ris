@@ -34,6 +34,7 @@ namespace SIPS.RIS
 
             oPresentacionInforme.IdEstudio = int.Parse(Request["idEstudio"].ToString().Trim());
             oPresentacionInforme.Fecha = DateTime.Parse(inputFechaPresentacion.Value);
+      
 
             oPresentacionInforme.Save();
 

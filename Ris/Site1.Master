@@ -11,6 +11,8 @@
     <link rel="stylesheet" type="text/css" href="~/css/style.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="~/css/style.responsive.css" media="all" />
 
+
+
     <script type="text/javascript" src="js/jquery.min.js"></script>    
     <script type="text/javascript" src="js/script.js"></script>
     <script type="text/javascript" src="js/script.responsive.js"></script>   
@@ -70,7 +72,7 @@
                                 </LayoutTemplate>
                                 <ItemTemplate>
                                     <li>
-                                        <asp:HyperLink ID="hlMenu2" runat="server" NavigateUrl='<%# "~/RIS" + Page.ResolveUrl(Eval("url").ToString()) %>'> 
+                                        <asp:HyperLink ID="hlMenu2" runat="server" NavigateUrl='<%# "~/" + Page.ResolveUrl(Eval("url").ToString()) %>'> 
                          <%# Eval("text") %>
                                         </asp:HyperLink>
                                     </li>

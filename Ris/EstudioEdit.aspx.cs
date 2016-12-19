@@ -16,7 +16,7 @@ namespace SIPS.RIS
 
         // Declaraciones globales
         string hayError, camposObligatoriosCompletos;
-
+       
         // -----------------------------------------------------------------------------------------------------------
 
         protected void Page_Load(object sender, EventArgs e)
@@ -619,7 +619,7 @@ namespace SIPS.RIS
 
             if (inputFechaInicio.Value != "")
             {
-                oEstudio.FechaInicio = DateTime.Parse(inputFechaInicio.Value.ToString());
+                oEstudio.FechaInicio = DateTime.Parse(inputFechaInicio.Value);
             }
 
             // ++++++++++++++++++++++++++++++

@@ -140,7 +140,11 @@ namespace SIPS.RIS
                 oEnmienda.Save();
 
                 // Recupero el valor del id de la nueva enmienda para poder relacionarlos con los motivos que ingrese el usuario.
-                string url = "EnmiendaEdit.aspx?idEstudio=" + Request["idEstudio"].ToString().Trim() + "&idEnmienda=" + oEnmienda.IdEnmienda.ToString().Trim();
+                //string url = "EnmiendaEdit.aspx?idEstudio=" + Request["idEstudio"].ToString().Trim() + "&idEnmienda=" + oEnmienda.IdEnmienda.ToString().Trim();
+                //Lo mandamos al estudio por las dudas dejamos la linea anterior por si quieren quedar en la misma pantalla
+                RisEstudio oEstudio = new RisEstudio(int.Parse(Request["idEstudio"].ToString()));
+                string url = "EstudioEdit.aspx?idEstudio=" + Request["idEstudio"].ToString().Trim() + "&TipoDeEstudio=" + oEstudio.TipoEstudio.ToString().Trim() + "#marcaConcentimiento";
+               
                 Response.Redirect(url, false);
             }
         }

@@ -134,6 +134,7 @@ namespace SIPS.RIS
 
             if (inputFechaNacimiento.Value.ToString() != "")
             {
+                
                 oInvestigador.FechaNacimiento = DateTime.Parse(inputFechaNacimiento.Value.ToString());
             }
 

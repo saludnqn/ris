@@ -3,29 +3,21 @@
 
 <asp:Content ID="ContentHead" ContentPlaceHolderID="Superior" runat="server">
 
-    <script type="text/javascript" src='<%= ResolveUrl("~/ControlMenor/js/jquery-1.5.1.min.js") %>'></script>
-
-    <script type="text/javascript" src='<%= ResolveUrl("~/ControlMenor/js/jquery-ui-1.8.9.custom.min.js") %>'></script>
-
-    <script type="text/javascript" src='<%= ResolveUrl("~/ControlMenor/js/json2.js") %>'></script>
-
-    <link href='<%= ResolveUrl("~/ControlMenor/css/redmond/jquery.ui.all.css") %>' rel="stylesheet"
-        type="text/css" />
-
-    <link rel="stylesheet" type="text/css" href="../App_Themes/consultorio/ical.css" />
-
-    <script type="text/javascript" src="../js/jquery.ui.datepicker-es.js"></script>
-
-    <script type="text/javascript" src="../js/Mascara.js"></script>
-
-    <script type="text/javascript" src="../js/ValidaFecha.js"></script>
+    <script type="text/javascript" src='<%= ResolveUrl("js/jquery-1.5.1.min.js") %>'></script>
+    <script type="text/javascript" src='<%= ResolveUrl("js/jquery-ui-1.8.9.custom.min.js") %>'></script>
+    <script type="text/javascript" src='<%= ResolveUrl("js/json2.js") %>'></script>
+    <link href='<%= ResolveUrl("css/jquery.ui.all.css") %>' rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/ical.css" />
+    <script type="text/javascript" src="js/jquery.ui.datepicker-es.js"></script>
+    <script type="text/javascript" src="js/Mascara.js"></script>
+    <script type="text/javascript" src="js/ValidaFecha.js"></script>
 
     <script type="text/javascript">
 
         $(function () {
             $("#<%=inputFechaInicio.ClientID %>").datepicker({
                 showOn: 'button',
-                buttonImage: '../img/calend1.jpg',
+                buttonImage: 'img/calend1.jpg',
                 buttonImageOnly: true
             });
         });
@@ -33,7 +25,7 @@
         $(function () {
             $("#<%=inputFechaFin.ClientID %>").datepicker({
                 showOn: 'button',
-                buttonImage: '../img/calend1.jpg',
+                buttonImage: 'img/calend1.jpg',
                 buttonImageOnly: true
             });
         });       
@@ -97,7 +89,10 @@
                             <input class="estiloInputFecha" id="inputFechaInicio" runat="server" maxlength="10"
                                 onblur="valFecha(this)"
                                 onkeyup="mascara(this,'/',patron,true)" tabindex="3" type="text"
-                                __designer:mapid="45" width="100px" /></td>
+                                __designer:mapid="45" width="100px" /><asp:Label ID="Label88" runat="server" Text="(dd/mm/aaaa)"></asp:Label>
+
+                                    </td>
+                                    
                                 </tr>
                                 <tr>
                                     <td>
@@ -113,7 +108,10 @@
                             <input class="estiloInputFecha" id="inputFechaFin" runat="server" maxlength="10"
                                 onblur="valFecha(this)"
                                 onkeyup="mascara(this,'/',patron,true)" tabindex="3" type="text"
-                                __designer:mapid="45" width="100px" /></td>
+                                __designer:mapid="45" width="100px" /><asp:Label ID="Label1" runat="server" Text="(dd/mm/aaaa)"></asp:Label>
+
+                                    </td>
+                                    
                                 </tr>
                                 <tr>
                                     <td>
